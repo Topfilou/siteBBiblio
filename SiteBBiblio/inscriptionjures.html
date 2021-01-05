@@ -1,0 +1,153 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inscription jurés</title>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="count">
+                <strong>Temps restant avant résultats :</strong> <br>
+                <span id="countd_day" >--</span> jours
+                <span id="count_hour">--</span> heures
+                <span id="count_min" >--</span> minutes
+                <span id="count_sec" >--</span> secondes
+            </div>
+            <h1>Festival de littérature 2021</h1>
+        </section>
+    
+        <div class="connexion">
+            <a href="connexion.html" input type="button">Connexion</a>
+            </a>
+        </div>
+    
+        <div class="search">
+                <input type="search" placeholder="Recherche">
+                <button>Ok</button>
+        </div> 
+    
+        <section class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a>
+                        
+                    </li>
+                    <li><a href="#">L'association</a>
+                        <ul>
+                            <li><a href="festival.html">Le festival</a></li>
+                            <li><a href="equipe.html">L'équipe</a></li>
+                            <li><a href="mecenat.html">Mécénat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="oeuvres.html">Oeuvres</a>
+                        <ul>
+                            <li><a href="oeuvresFrancaises.html">Françaises</a></li>
+                            <li><a href="oeuvresInternationales.html">Internationales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Concours</a>
+                        <ul>
+                            <li><a href="reglement.html">Règlement</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a>
+                       
+                    </li>
+                    <li><a href="#">Inscriptions</a>
+                        <ul>
+                            <li><a href="inscriptionjures.html">Jury</a></li>
+                            <li><a href="insAuteur.html">Oeuvres</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="historique.html">Historique</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+<!-- Corps du site: -->
+<section id="inscrip">
+    <h1><i><b><span>Formulaire d'inscription : </span></b></i></h1>
+<fieldset>
+<form Name="f1" action="page.php" method="post">
+<label>Nom :* </label><input type="text" Name="Nom :" maxlength="20" required />
+<br/>
+<label>Prénom :* </label><input type="text" Name="Prénom :" required />
+<br/>
+<label> E-mail :</label> <input type="email" name="mail" required placeholder="Nom.prenom@gmail.com"><br/>
+<label> Date de naissance :</label> <input type="date" name="Datedenaissance"/><br/>
+<label>téléphone:</label><input type="number" Name="telephone" required />
+<label> Mot de passe :</label> <input type="password" name="Motdepasse"><br/>
+<label> Corfimer Mot de passe :</label> <input type="password" name="ConfimerMotdepasse"><br/>
+<label>Adresse:</label><input type="text" Name="adresse" required />
+<label>Code postal:</label><input type="number" Name="postal" required />
+<form method="post" action="">
+    <p class="form">
+        <label for="pays">Dans quel pays habitez-vous ?</label><br />
+        <select name="pays" id="pays">
+            <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="espagne">Espagne</option>
+                <option value="italie">Italie</option>
+                <option value="royaume-uni">Royaume-Uni</option>
+            </optgroup>
+            <optgroup label="Amérique">
+                <option value="canada">Canada</option>
+                <option value="etats-unis">Etats-Unis</option>
+            </optgroup>
+            <optgroup label="Asie">
+                <option value="chine">Chine</option>
+                <option value="japon">Japon</option>
+            </optgroup>
+        </select>
+    </p>
+ </form>
+<br/>
+<label> Sexe :</label> <input type="radio" name="sexe" ><label>Homme</label> 
+       <input type="radio" name="sexe" ><label> Femme</label>
+<br/>
+<form method="post" action="">
+    <p class="form">
+        Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+        <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+        <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
+        <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
+        <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
+    </p>
+ </form>
+ <label for="presentation">Présentation : </label>
+            <textarea name="prez" id="presentation"></textarea><br><br>
+<label> Pièce d'identité :</label> <input type="file" name="identity"><br/>
+
+<input type="submit" value="S'inscrire">
+</section>
+
+<footer>
+    <div class="sponsors">
+        <div class="sponsor"></div>
+        <div class="sponsor"></div>
+        <div class="sponsor"></div>
+    </div>
+    <div class="plandesite">
+        <h2>Plan de site</h2>
+        <p>conditions générales</p>
+        <p>mentions légales</p>
+    </div>
+    <div class="sociaux">
+        <div class="social">
+            <img src="img/facebook.png" alt="">
+        </div>
+        <div class="social">
+            <img src="img/linkedin.png" alt="">
+        </div>
+        <div class="social">
+            <img src="img/twitter.png" alt="">
+        </div>
+    </div>
+</footer>
+</body>
+</html>
